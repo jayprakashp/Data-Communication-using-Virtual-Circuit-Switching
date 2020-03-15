@@ -2,7 +2,7 @@
 implementing different models of queue in c++.
 
 ============================================================================================================================
-    												CONSOLE APPLICATION
+    			CONSOLE APPLICATION
 ============================================================================================================================
 
 HEADER FILES INCLUDED IN THE APPLICATION:
@@ -16,35 +16,35 @@ SOURCE FILES INCLUDED IN THE APPLICATION:
 #include"floyd_warshal.cpp"
 
 
-=====================================================================================================================================
+============================================================================================================================
 USER DEFINED FUNCTION IMPLEMENTED IN THE APPLICATION:
 
 FUNCTIONS USED IN MAIN FILE :
 
-void read_topfile(string) :-------------------------------------------------This function is used to read the topology file.
-void read_connfile(string) :------------------------------------------------This function is used to read the connection file.
-void command_line_parsing(int narg,char **arg) :----------------------------This function is used for parsing the command line input.
-void find_1st_shortest_path() :---------------------------------------------This function is used to find the first shortest paths for all node pairs, using floyd-warshall algorithm.
-unordered_multimap<int, pair<int,vector<int>>> apply_all_pair_shortest_path(int) :---This function basically takes input graph and calls floyd-warshall algorithm.
-void find_2nd_shortest_path() :---------------------------------------------This function is used to find the second link-disjoint shortest paths for all node pairs.
-void writing_path_in_routing_file() :---------------------------------------This function writes the path information in the routingtable file for all the nodes.
-void writing_path_in_forwarding_file() :------------------------------------This function writes the path information in the forwardingtable file for all established connections.
-double min_find(double, double) :-------------------------------------------This utility function is used to find the minimum of two doubles.
-void compute_bequi() :------------------------------------------------------This function is used to compute the bequi for the optimistic approach.
-bool check_path_admission(int,vector<int>,vector<vector<int>>) :------------This function is used to check whether a connection request is accepted or not.
-void path_validity_checking() :---------------------------------------------This function is used for the validation of all the connection requests.
-void path_table_computation() :---------------------------------------------This function computes the final paths table, by using path validity checking.
-void compute_forward_table_entry(int,vector<int>) :-------------------------This function computes one entry in the forwarding table.
-void forwarding_table_computation() :---------------------------------------This function is used for the computation of entire forwarding table.
+	void read_topfile(string) :-------------------------------------------------This function is used to read the topology file.
+	void read_connfile(string) :------------------------------------------------This function is used to read the connection file.
+	void command_line_parsing(int narg,char **arg) :----------------------------This function is used for parsing the command line input.
+	void find_1st_shortest_path() :---------------------------------------------This function is used to find the first shortest paths for all node pairs, using floyd-warshall algorithm.
+	unordered_multimap<int, pair<int,vector<int>>> apply_all_pair_shortest_path(int) :---This function basically takes input graph and calls floyd-warshall algorithm.
+	void find_2nd_shortest_path() :---------------------------------------------This function is used to find the second link-disjoint shortest paths for all node pairs.
+	void writing_path_in_routing_file() :---------------------------------------This function writes the path information in the routingtable file for all the nodes.
+	void writing_path_in_forwarding_file() :------------------------------------This function writes the path information in the forwardingtable file for all established connections.
+	double min_find(double, double) :-------------------------------------------This utility function is used to find the minimum of two doubles.
+	void compute_bequi() :------------------------------------------------------This function is used to compute the bequi for the optimistic approach.
+	bool check_path_admission(int,vector<int>,vector<vector<int>>) :------------This function is used to check whether a connection request is accepted or not.
+	void path_validity_checking() :---------------------------------------------This function is used for the validation of all the connection requests.
+	void path_table_computation() :---------------------------------------------This function computes the final paths table, by using path validity checking.
+	void compute_forward_table_entry(int,vector<int>) :-------------------------This function computes one entry in the forwarding table.
+	void forwarding_table_computation() :---------------------------------------This function is used for the computation of entire forwarding table.
 
 
 FUNCTIONS USED IN FLOYD-WARSHALL FILE :
 
-void print_path(graph *g,int i,int j,vector<int> &v) :----------------------This function is used to print the shortest path.
-unordered_multimap<int,pair<int,vector<int>>> output_shortest_path(graph *g,unordered_multimap<int,pair<int,vector<int>>>) :- This function is used to output the shortest paths for all pairs.
-graph* input_graph1(unordered_multimap<int,vector<int>> &m,int V,int E) :---This function is used to take graph as input for the algorithm. 
-int min(int,int) :----------------------------------------------------------This utility function is used to find the minimum of two ints.
-void floyd_warshal(graph* g) :----------------------------------------------This function is basically the floyd_warshal algorithm.
+	void print_path(graph *g,int i,int j,vector<int> &v) :----------------------This function is used to print the shortest path.
+	unordered_multimap<int,pair<int,vector<int>>> output_shortest_path(graph *g,unordered_multimap<int,pair<int,vector<int>>>) :- This function is used to output the shortest paths for all pairs.
+	graph* input_graph1(unordered_multimap<int,vector<int>> &m,int V,int E) :---This function is used to take graph as input for the algorithm. 
+	int min(int,int) :----------------------------------------------------------This utility function is used to find the minimum of two ints.
+	void floyd_warshal(graph* g) :----------------------------------------------This function is basically the floyd_warshal algorithm.
 
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -81,11 +81,11 @@ OUTPUT FORMAT OF THE APPLICATION:
 
 FAILURE CASE FOR THE APPLICATION:
 
---> It takes some input files, so if these files are deleted, replaced or renamed then it will give error : PROBLEM IN OPENING FILE <filename>.
+	-> It takes some input files, so if these files are deleted, replaced or renamed then it will give error : PROBLEM IN OPENING FILE <filename>.
 
 
------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 
 EXECUTION STEPS OF THE APPLICATION:
 	 Step 1: Compile the project using g++ compiler.

@@ -1,5 +1,5 @@
 # Virtual circuit switching.
-implementing different models of queue in c++.
+implementing different models in c++.
 
 
     			CONSOLE APPLICATION

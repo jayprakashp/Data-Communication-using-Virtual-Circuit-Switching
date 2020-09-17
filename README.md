@@ -1,8 +1,41 @@
 # Virtual circuit switching.
-implementing different models in c++.
 
 
     			CONSOLE APPLICATION
+
+
+Implementation of virtual circuit switching in network communication system.
+This project covers concepts of link-disjoint routing and virtual circuit switching.
+
+The Application will first determine two shortest cost (not necessarily link-disjoint) paths for all node-pairs. You may use either hop or distance
+metric. The command line parameter will specify the choice.
+
+A connection request is Accept based on the two approach:
+Optimistic Approach:
+	This is used if −p command-line argument has value 0. Let Cl denote the total capacity of a link. 
+	Let 
+		
+		bequiv = min(bimax, bavg + 0.25 ∗ (bimax − bimin )). 
+		
+		
+A connection is admitted if the following condition is met, along each link of the path selected for connection i.
+
+		bequiv <= (cl -  summation(biequiv)). 
+
+
+where n denotes the number of existing connections sharing a given link (along the path selected for the given connection) and j denotes the index
+of a connection assigned on this link.
+
+Pessimistic Approach: 
+If −p value in command-line argument is 1 then use this approach. Let C l denote the total capacity of link l. 
+A connection is admitted if the following condition is met, along each link of the path selected for connection i:
+
+	bequiv <= (cl -  summation(biequiv)). 
+
+	
+where j denotes the index of a connection assigned on a given link along
+the path selected for the given connection. This gets repeated for the
+pessimistic approach.
 
 
 HEADER FILES INCLUDED IN THE APPLICATION:

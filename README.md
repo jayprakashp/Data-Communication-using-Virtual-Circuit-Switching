@@ -7,7 +7,7 @@
 Implementation of virtual circuit switching in network communication system.
 This project covers concepts of link-disjoint routing and virtual circuit switching.
 
-The Application will first determine two shortest cost (not necessarily link-disjoint) paths for all node-pairs. You may use either hop or distance
+The Application will first determine two shortest cost (link-disjoint) paths for all node-pairs. You may use either hop or distance
 metric. The command line parameter will specify the choice.
 
 A connection request is Accept based on the two approach:

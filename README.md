@@ -15,22 +15,22 @@ Optimistic Approach:
 	This is used if −p command-line argument has value 0. Let Cl denote the total capacity of a link. 
 	Let 
 		
-		bequiv = min(bimax, bavg + 0.25 ∗ (bimax − bimin )). 
+		bequiv = min(bmax, bavg + 0.25 ∗ (bmax − bmin )). 
 		
 		
 A connection is admitted if the following condition is met, along each link of the path selected for connection i.
 
-		bequiv <= (cl -  summation(biequiv)). 
+		bequiv <= (cl -  summation(bequiv)). 
 
 
 where n denotes the number of existing connections sharing a given link (along the path selected for the given connection) and j denotes the index
 of a connection assigned on this link.
 
 Pessimistic Approach: 
-If −p value in command-line argument is 1 then use this approach. Let C l denote the total capacity of link l. 
+If −p value in command-line argument is 1 then use this approach. Let Cl denote the total capacity of link l. 
 A connection is admitted if the following condition is met, along each link of the path selected for connection i:
 
-	bequiv <= (cl -  summation(biequiv)). 
+	bmax <= (cl -  summation(bmax)). 
 
 	
 where j denotes the index of a connection assigned on a given link along
